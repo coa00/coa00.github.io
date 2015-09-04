@@ -2,8 +2,7 @@ var pos = 100;
 function setup(){
     var myCanvas = createCanvas(windowWidth, 300);
     myCanvas.parent('myContainer');
-    background(256);
-    line(0, 0, windowHeight, windowHeight);
+    background(255);
 }
 
 function windowResized() {
