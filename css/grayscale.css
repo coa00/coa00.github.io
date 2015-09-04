@@ -1,3 +1,12 @@
+#myContainer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -26,7 +35,7 @@ body {
     height: 100%;
     font-family: 'Noto Sans Japanese', serif;
     color: #333;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 html {
@@ -63,7 +72,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #B09FC0;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -72,7 +81,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #B09FC0;
 }
 
 .light {
@@ -84,7 +93,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #FFF;
+    background-color: transparent;
 }
 
 .navbar-custom .navbar-brand {
@@ -98,7 +107,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: transparent;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -154,7 +163,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #FFF;
+        background-color: transparent;
     }
 }
 
@@ -166,7 +175,7 @@ a:focus {
     text-align: center;
     color: #333;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #FFFF;
+    background-color: transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -284,7 +293,7 @@ a:focus {
     padding: 50px 0;
     color: #333;
     /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
-    background-color: #FFF;
+    background-color: transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
