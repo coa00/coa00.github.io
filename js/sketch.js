@@ -1,7 +1,7 @@
 var pos;
 
 function setup(){
-    var myCanvas = createCanvas(windowWidth, windowHeight);
+    var myCanvas = createCanvas(windowWidth, windowHeight*0.5);
     myCanvas.parent('myContainer');
     background(255);
 }
@@ -35,7 +35,7 @@ function draw() {
 }
 
 function getScrollTop(){
-    pos = $(window).scrollTop()*0.1;
+    pos = $(window).scrollTop()*0.01;
 }
 
 $(window).on("load scroll", getScrollTop);
