@@ -9,7 +9,6 @@ function setup(){
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     background(256);
-    line(0, 0, windowHeight, windowHeight);
 }
 
 //function mouseWheel(event) {
