@@ -34,7 +34,7 @@ function draw() {
 }
 
 function getScrollTop(){
-    pos = $(window).scrollTop()*0.01;
+    pos = $(window).scrollTop()*0.1;
     draw();
 }
 
