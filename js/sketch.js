@@ -35,6 +35,7 @@ function draw() {
 
 function getScrollTop(){
     pos = $(window).scrollTop()*0.01;
+    draw();
 }
 
 $(window).on("load scroll", getScrollTop);
