@@ -1,6 +1,7 @@
-var pos = 100;
+var pos;
+
 function setup(){
-    var myCanvas = createCanvas(windowWidth, 300);
+    var myCanvas = createCanvas(windowWidth, windowHeight);
     myCanvas.parent('myContainer');
     background(255);
 }
@@ -11,15 +12,15 @@ function windowResized() {
     line(0, 0, windowHeight, windowHeight);
 }
 
-function mouseWheel(event) {
-    //event.delta can be +1 or -1 depending
-    //on the wheel/scroll direction
-    //move the square one pixel up or down
-    pos += event.delta;
-
-    //uncomment to block page scrolling
-    //return false;
-}
+//function mouseWheel(event) {
+//    //event.delta can be +1 or -1 depending
+//    //on the wheel/scroll direction
+//    //move the square one pixel up or down
+//    pos += event.delta;
+//
+//    //uncomment to block page scrolling
+//    //return false;
+//}
 
 var noiseScale=0.02;
 
@@ -32,3 +33,9 @@ function draw() {
         line(x, pos+noiseVal*80, x, windowHeight);
     }
 }
+
+function getScrollTop(){
+    pos = $(window).scrollTop()*0.1;
+}
+
+$(window).on("load scroll", getScrollTop);
